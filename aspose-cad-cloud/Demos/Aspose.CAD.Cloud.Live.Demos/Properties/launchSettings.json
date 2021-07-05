@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Aspose.Email.Cloud.Live.Demos": {
+    "Aspose.CAD.Cloud.Live.Demos": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
