@@ -13,18 +13,15 @@
                         {
                             if (Model.SaveAsOptions != null)
                             {
-                                @await Html.PartialAsync("SaveAs")
-                            }
-                            <div class="convertbtn">
-                                <input type="button" class="btn btn-success btn-lg" id="uploadButton" value="@Model.UploadButtonText" />
-                            </div>
-                        }
+            @await Html.PartialAsync("SaveAs") }
+            <div class="convertbtn">
+                <input type="button" class="btn btn-success btn-lg" id="uploadButton" value="@Model.UploadButtonText" />
+            </div>}
                     </form>
                 </div>
                 @if (!Model.UploadAndRedirect)
                 {
-                    @await Html.PartialAsync("Download")
-                }
+    @await Html.PartialAsync("Download")}
                 <div id="alertPlaceHolder" class="col-md-12" style="margin-top:10px;">
                     <p id="alertMessage" class="alert alert-danger hidden">Alert Message</p>
                     <p id="alertSuccess" class="alert alert-success hidden">Alert Success</p>

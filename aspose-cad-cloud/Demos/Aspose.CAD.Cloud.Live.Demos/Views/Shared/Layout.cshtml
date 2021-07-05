@@ -10,7 +10,7 @@
 
     @if (!string.IsNullOrEmpty(ViewBag.CanonicalTag))
     {
-        @Html.Raw(ViewBag.CanonicalTag)}
+@Html.Raw(ViewBag.CanonicalTag)}
     <link href="@Url.Content("~/img/favicon.ico")" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Bootstrap & Font CSS -->
@@ -32,13 +32,12 @@
     <link rel="stylesheet" href="/css/asposeapp.css" type="text/css" />
     @if (IsSectionDefined("styles"))
     {
-        @RenderSection("styles", false)}
+@RenderSection("styles", false)}
 
     @if (ViewBag.SaveAsComponent)
     {
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.full.min.js"></script>
-    }
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" type="text/css" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.full.min.js"></script>}
 </head>
 <body>
     <div id="DynabicMenuInnerDiv"></div>
@@ -56,19 +55,18 @@
 
     @if (IsSectionDefined("scripts"))
     {
-        @RenderSection("scripts", false);
-    }
+@RenderSection("scripts", false);
+}
 
     @if (ViewBag.SaveAsComponent)
     {
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#saveAs').select2();
-                var val = $('#saveAs option:eq(0)').val();
-                $('#saveAs').val(val);
-                $('#saveAs').change();
-            });
-        </script>
-}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#saveAs').select2();
+        var val = $('#saveAs option:eq(0)').val();
+        $('#saveAs').val(val);
+        $('#saveAs').change();
+    });
+</script>}
 </body>
 </html>
