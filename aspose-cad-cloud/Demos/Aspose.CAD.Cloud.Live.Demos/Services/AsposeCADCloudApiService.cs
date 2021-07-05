@@ -25,7 +25,7 @@ namespace Aspose.CAD.Cloud.Live.Demos.Services
 
         public Stream Convert(Stream file, string fileName, string toFormat)
         {
-            Aspose.CAD.Cloud.Sdk.Model.Requests.UploadFileRequest uploadFileRequest = new Sdk.Model.Requests.UploadFileRequest()
+            UploadFileRequest uploadFileRequest = new UploadFileRequest()
             {
                 Path = fileName,
                 File = file
