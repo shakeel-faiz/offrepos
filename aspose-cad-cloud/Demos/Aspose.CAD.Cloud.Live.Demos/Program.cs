@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Aspose.Email.Cloud.Live.Demos
+namespace Aspose.CAD.Cloud.Live.Demos
 {
     public class Program
     {

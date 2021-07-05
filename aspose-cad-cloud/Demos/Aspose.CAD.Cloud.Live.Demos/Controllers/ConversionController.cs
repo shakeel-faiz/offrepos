@@ -1,5 +1,5 @@
-﻿using Aspose.Email.Cloud.Live.Demos.Models;
-using Aspose.Email.Cloud.Live.Demos.Services;
+﻿using Aspose.CAD.Cloud.Live.Demos.Models;
+using Aspose.CAD.Cloud.Live.Demos.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 
 
-namespace Aspose.Email.Cloud.Live.Demos.Controllers
+namespace Aspose.CAD.Cloud.Live.Demos.Controllers
 {
     public class ConversionController : BaseController
     {

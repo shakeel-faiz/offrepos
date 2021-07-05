@@ -3,7 +3,7 @@ using Aspose.Email.Cloud.Sdk.Model;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace Aspose.Email.Cloud.Live.Demos.Services
+namespace Aspose.CAD.Cloud.Live.Demos.Services
 {
     public interface IAsposeEmailCloudApiService
     {

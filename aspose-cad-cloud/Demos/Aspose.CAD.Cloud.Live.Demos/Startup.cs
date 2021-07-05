@@ -1,11 +1,11 @@
-using Aspose.Email.Cloud.Live.Demos.Services;
+using Aspose.CAD.Cloud.Live.Demos.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Aspose.Email.Cloud.Live.Demos
+namespace Aspose.CAD.Cloud.Live.Demos
 {
     public class Startup
     {

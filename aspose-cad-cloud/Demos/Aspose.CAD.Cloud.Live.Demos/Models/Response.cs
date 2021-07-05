@@ -1,4 +1,4 @@
-﻿namespace Aspose.Email.Cloud.Live.Demos.Models
+﻿namespace Aspose.CAD.Cloud.Live.Demos.Models
 {
     public class Response
     {

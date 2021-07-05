@@ -1,7 +1,7 @@
-﻿using Aspose.Email.Cloud.Live.Demos.Controllers;
+﻿using Aspose.CAD.Cloud.Live.Demos.Controllers;
 using System.Collections.Generic;
 
-namespace Aspose.Email.Cloud.Live.Demos.Models
+namespace Aspose.CAD.Cloud.Live.Demos.Models
 {
     public class ViewModel
     {

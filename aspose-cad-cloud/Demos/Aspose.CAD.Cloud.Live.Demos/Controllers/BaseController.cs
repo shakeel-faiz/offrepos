@@ -3,7 +3,7 @@ using Microsoft.Extensions.Caching.Memory;
 using System.Collections.Generic;
 using System.Xml;
 
-namespace Aspose.Email.Cloud.Live.Demos.Controllers
+namespace Aspose.CAD.Cloud.Live.Demos.Controllers
 {
     public abstract class BaseController : Controller
     {
