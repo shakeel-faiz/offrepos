@@ -40,6 +40,14 @@ namespace Aspose.CAD.Cloud.Live.Demos.Services
             };
 
             var convertResult = CadCloudApi.GetDrawingSaveAs(getDrawingSaveAsRequest);
+
+            DeleteFileRequest deleteFileRequest = new DeleteFileRequest()
+            {
+                Path = fileName
+            };
+
+            CadCloudApi.DeleteFile(deleteFileRequest);
+
             return convertResult;
         }
     }
