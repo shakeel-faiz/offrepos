@@ -17,7 +17,7 @@
   <res name="btnBackHome">Back to Home</res>
   <res name="FileSelectMessage">Please select a file to convert</res>
   <res name="SaveAs">Save as</res>
-  <res name="imagingConversionSaveAsOptions">PDF</res>
+  <res name="imagingConversionSaveAsOptions">BMP,GIF,JPEG,PSD,TIFF,WEBP,PNG,PDF</res>
   <res name="DropOrUploadFile">Drop or upload your file</res>
   <res name="DropOrUploadFiles">Drop or upload your files</res>
   <res name="imagingValidationExpression">.bmp|.gif|.djvu|.wmf|.emf|.jpeg|.jpeg2000|.psd|.tiff|.webp|.png|.dicom|.cdr|.cmx|.odg|.dng.|.svg</res>
