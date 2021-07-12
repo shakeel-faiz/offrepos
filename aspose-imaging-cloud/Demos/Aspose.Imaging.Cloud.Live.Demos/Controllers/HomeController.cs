@@ -14,8 +14,8 @@ namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
 
         public IActionResult Default()
         {
-            ViewBag.PageTitle = Resources["cadConversionPageTitle"];
-            ViewBag.MetaDescription = Resources["cadConversionMetaDescription"];
+            ViewBag.PageTitle = Resources["imagingConversionPageTitle"];
+            ViewBag.MetaDescription = Resources["imagingConversionMetaDescription"];
 
             var model = new LandingPageModel(this);
             return View(model);
