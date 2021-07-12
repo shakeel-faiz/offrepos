@@ -1,51 +1,51 @@
-﻿using Aspose.CAD.Cloud.Sdk.Api;
-using Aspose.CAD.Cloud.Sdk.Model.Requests;
+﻿using Aspose.Imaging.Cloud.Sdk.Api;
+using Aspose.Imaging.Cloud.Sdk.Model.Requests;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
 namespace Aspose.Imaging.Cloud.Live.Demos.Services
 {
-    public interface IAsposeCADCloudApiService
+    public interface IAsposeImagingCloudApiService
     {
         Stream Convert(Stream file, string fileName, string toFormat);
     }
 
-    public class AsposeCADCloudApiService : IAsposeCADCloudApiService
+    public class AsposeImagingCloudApiService : IAsposeImagingCloudApiService
     {
-        public readonly CadApi CadCloudApi;
+        public readonly ImagingApi ImagingCloudApi;
 
-        public AsposeCADCloudApiService(IConfiguration config)
+        public AsposeImagingCloudApiService(IConfiguration config)
         {
-            string ClientId = config["AsposeCADUserData:ClientId"];
-            string ClientSecret = config["AsposeCADUserData:ClientSecret"];
+            string ClientId = config["AsposeImagingUserData:ClientId"];
+            string ClientSecret = config["AsposeImagingUserData:ClientSecret"];
 
-            CadCloudApi = new CadApi(appKey: ClientSecret, appSid: ClientId);
+            ImagingCloudApi = new ImagingApi(clientSecret: ClientSecret, clientId: ClientId);
         }
 
         public Stream Convert(Stream file, string fileName, string toFormat)
         {
             UploadFileRequest uploadFileRequest = new UploadFileRequest()
             {
-                Path = fileName,
+                path = fileName,
                 File = file
             };
 
-            CadCloudApi.UploadFile(uploadFileRequest);
+            ImagingCloudApi.UploadFile(uploadFileRequest);
 
-            GetDrawingSaveAsRequest getDrawingSaveAsRequest = new GetDrawingSaveAsRequest()
+            var request = new ConvertImageRequest()
             {
-                Name = fileName,
-                OutputFormat = toFormat
+                name = fileName,
+                format = toFormat
             };
 
-            var convertResult = CadCloudApi.GetDrawingSaveAs(getDrawingSaveAsRequest);
+            var convertResult = ImagingCloudApi.ConvertImage(request);
 
             DeleteFileRequest deleteFileRequest = new DeleteFileRequest()
             {
-                Path = fileName
+                path = fileName
             };
 
-            CadCloudApi.DeleteFile(deleteFileRequest);
+            ImagingCloudApi.DeleteFile(deleteFileRequest);
 
             return convertResult;
         }

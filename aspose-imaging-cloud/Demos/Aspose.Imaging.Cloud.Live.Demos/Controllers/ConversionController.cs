@@ -12,14 +12,14 @@ namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
 {
     public class ConversionController : BaseController
     {
-        public ConversionController(IMemoryCache cache, IAsposeCADCloudApiService cadService) : base(cache)
+        public ConversionController(IMemoryCache cache, IAsposeImagingCloudApiService imagingService) : base(cache)
         {
-            CADService = cadService;
+            ImagingService = imagingService;
         }
 
         public override string Product => (string)RouteData.Values["product"];
 
-        public IAsposeCADCloudApiService CADService { get; }
+        public IAsposeImagingCloudApiService ImagingService { get; }
 
         public IActionResult Conversion()
         {
@@ -51,7 +51,7 @@ namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
                 var file = ms;
                 outputFileName = Path.GetFileNameWithoutExtension(fileName) + "." + outputType;
 
-                using (MemoryStream convertResult = CADService.Convert(file, fileName, toFormat) as MemoryStream)
+                using (MemoryStream convertResult = ImagingService.Convert(file, fileName, toFormat) as MemoryStream)
                 {
                     fileData = Convert.ToHexString(convertResult.ToArray());
                 }
