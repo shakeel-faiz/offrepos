@@ -1,6 +1,6 @@
-# Aspose.CAD Cloud for .NET Live Demos
+# Aspose.Imaging Cloud for .NET Live Demos
 
-Aspose.CAD Cloud for .NET Live Demos Source Code.
+Aspose.Imaging Cloud for .NET Live Demos Source Code.
  
 # How to run
  
