@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Aspose.CAD.Cloud.Live.Demos.Models
+namespace Aspose.Imaging.Cloud.Live.Demos.Models
 {
     public class HowToModel
     {

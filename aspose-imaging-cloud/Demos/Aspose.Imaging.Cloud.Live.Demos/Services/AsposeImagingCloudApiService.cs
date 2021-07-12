@@ -3,9 +3,8 @@ using Aspose.CAD.Cloud.Sdk.Model.Requests;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace Aspose.CAD.Cloud.Live.Demos.Services
+namespace Aspose.Imaging.Cloud.Live.Demos.Services
 {
-
     public interface IAsposeCADCloudApiService
     {
         Stream Convert(Stream file, string fileName, string toFormat);
