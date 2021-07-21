@@ -17,7 +17,7 @@
   <res name="btnBackHome">Back to Home</res>
   <res name="FileSelectMessage">Please select a file to convert</res>
   <res name="SaveAs">Select Language: </res>
-  <res name="ocrConversionSaveAsOptions">English,French,Spanish,Portuguese,German</res>
+  <res name="ocrConversionSaveAsOptions">English,German,French,Italian,Spanish,Portuguese,Polish,Slovene,Slovak,Netherlands,Lithuanian,Latvian,Danish,Norwegian,Finnish,Serbian,Croatian,Czech,Swedish,Estonian,Romanian,Chinese,Russian,Arabic,Hindi,Ukraine</res>
   <res name="DropOrUploadFile">Drop or upload your file</res>
   <res name="DropOrUploadFiles">Drop or upload your files</res>
   <res name="ocrValidationExpression">.JPG|.BMP|.TIFF|.GIF|.PNG</res>

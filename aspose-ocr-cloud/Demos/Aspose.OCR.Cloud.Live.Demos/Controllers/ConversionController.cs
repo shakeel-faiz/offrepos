@@ -12,14 +12,14 @@ namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
 {
     public class ConversionController : BaseController
     {
-        public ConversionController(IMemoryCache cache, IAsposeImagingCloudApiService imagingService) : base(cache)
+        public ConversionController(IMemoryCache cache, IAsposeOCRCloudApiService ocrService) : base(cache)
         {
-            ImagingService = imagingService;
+            OCRService = ocrService;
         }
 
         public override string Product => (string)RouteData.Values["product"];
 
-        public IAsposeImagingCloudApiService ImagingService { get; }
+        public IAsposeOCRCloudApiService OCRService { get; }
 
         public IActionResult Conversion()
         {
@@ -39,22 +39,19 @@ namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
             IFormFile postedFile = Request.Form.Files[0];
             string fileName = postedFile.FileName;
             string fileData = string.Empty;
-            string outputFileName = string.Empty;
+            string outputFileName = "Recognized.txt";
 
             using (MemoryStream ms = new MemoryStream())
             {
                 await postedFile.CopyToAsync(ms);
                 ms.Position = 0;
 
-                string fromFormat = Path.GetExtension(fileName).Substring(1);
-                string toFormat = outputType;
+                string language = outputType;
                 var file = ms;
-                outputFileName = Path.GetFileNameWithoutExtension(fileName) + "." + outputType;
 
-                using (MemoryStream convertResult = ImagingService.Convert(file, fileName, toFormat) as MemoryStream)
-                {
-                    fileData = Convert.ToHexString(convertResult.ToArray());
-                }
+                string recognizedText = OCRService.Convert(file, fileName, language);
+                byte[] byteArray = System.Text.Encoding.UTF8.GetBytes(recognizedText);
+                fileData = Convert.ToHexString(byteArray);
             }
 
             return new Response
@@ -64,6 +61,5 @@ namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
                 FileData = fileData
             };
         }
-
     }
 }

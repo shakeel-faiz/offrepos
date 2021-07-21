@@ -22,7 +22,7 @@ namespace Aspose.Imaging.Cloud.Live.Demos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddSingleton<IAsposeImagingCloudApiService, AsposeImagingCloudApiService>();
+            services.AddSingleton<IAsposeOCRCloudApiService, AsposeOCRCloudApiService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
