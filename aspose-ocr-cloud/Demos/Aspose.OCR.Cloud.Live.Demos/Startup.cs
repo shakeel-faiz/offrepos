@@ -1,11 +1,11 @@
-using Aspose.Imaging.Cloud.Live.Demos.Services;
+using Aspose.OCR.Cloud.Live.Demos.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Aspose.Imaging.Cloud.Live.Demos
+namespace Aspose.OCR.Cloud.Live.Demos
 {
     public class Startup
     {

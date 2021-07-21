@@ -4,7 +4,7 @@ using Aspose.Ocr.Cloud.Sdk.Model.Requests;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace Aspose.Imaging.Cloud.Live.Demos.Services
+namespace Aspose.OCR.Cloud.Live.Demos.Services
 {
     public interface IAsposeOCRCloudApiService
     {

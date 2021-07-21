@@ -3,7 +3,7 @@ using Microsoft.Extensions.Caching.Memory;
 using System.Collections.Generic;
 using System.Xml;
 
-namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
+namespace Aspose.OCR.Cloud.Live.Demos.Controllers
 {
     public abstract class BaseController : Controller
     {

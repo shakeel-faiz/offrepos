@@ -1,4 +1,4 @@
-﻿namespace Aspose.Imaging.Cloud.Live.Demos.Models
+﻿namespace Aspose.OCR.Cloud.Live.Demos.Models
 {
     public class Response
     {
