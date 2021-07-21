@@ -1,6 +1,6 @@
-# Aspose.Imaging Cloud for .NET Live Demos
+# Aspose.OCR Cloud for .NET Live Demos
 
-Aspose.Imaging Cloud for .NET Live Demos Source Code.
+Aspose.OCR Cloud for .NET Live Demos Source Code.
  
 # How to run
  
