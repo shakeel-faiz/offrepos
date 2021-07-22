@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <res name="ApplicationTitle">Aspose.Imaging Cloud Live Demos</res>
-  <res name="ApplicationTitle2">Aspose.Imaging Cloud API for C#</res>
+  <res name="ApplicationTitle">Aspose.Diagram Cloud Live Demos</res>
+  <res name="ApplicationTitle2">Aspose.Diagram Cloud API for C#</res>
   <res name="HomePageTitle">Home</res>
   <res name="DownloadFileLinkTitle">Download your file</res>
   <res name="NoSearchResultsMessage">No search results</res>
@@ -11,23 +11,23 @@
   <res name="FileAmountMessageOne">Please select only one file</res>
   <res name="FileAmountMessageLessTen">Please select less than ten files</res>
   <res name="btnConvertNow">CONVERT NOW</res>
-  <res name="AsposeImaging">Aspose.Imaging Cloud</res>
+  <res name="AsposeDiagram">Aspose.Diagram Cloud</res>
   <res name="PageNotFound">404 Page not found</res>
   <res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
   <res name="btnBackHome">Back to Home</res>
   <res name="FileSelectMessage">Please select a file to convert</res>
   <res name="SaveAs">Save as</res>
-  <res name="imagingConversionSaveAsOptions">BMP,GIF,JPEG,PSD,TIFF,WEBP,PNG,PDF</res>
+  <res name="diagramConversionSaveAsOptions">PDF,PNG,BMP,VSSX,VSTM,SVG,HTML,XPS</res>
   <res name="DropOrUploadFile">Drop or upload your file</res>
   <res name="DropOrUploadFiles">Drop or upload your files</res>
-  <res name="imagingValidationExpression">.bmp|.gif|.djvu|.wmf|.emf|.jpeg|.jpeg2000|.psd|.tiff|.webp|.png|.dicom|.cdr|.cmx|.odg|.dng.|.svg</res>
+  <res name="diagramValidationExpression">.VSD|.VSDX|.VSX|.VTX|.VDX|.VSSX|.VSTX|.VSDM|.VSSM|.VSTM</res>
   <res name="FileConvertedSuccessMessage1">Your file has been converted successfully</res>
   <res name="DownLoadNow">DOWNLOAD NOW</res>
   <res name="FileWrongTypeMessage">You are trying to upload document(s) of unsupported type: </res>
-  <res name="imagingConversionPageTitle">Free Online Convert Images with High Quality.</res>
-  <res name="imagingConversionMetaDescription">Free online image conversion app for many popular image, photo, picture formats. Convert image formats to PDF.</res>
-  <res name="imagingConversionTitle">Free Online Convert Images with High Quality.</res>
-  <res name="imagingConversionSubTitle">Just upload your image &amp; select the output format to get the result for free from any device, with a modern browser like Chrome, Opera and Firefox.</res>
+  <res name="diagramConversionPageTitle">Convert Visio Online App - Free Online Visio Converter.</res>
+  <res name="diagramConversionMetaDescription">Convert VSDX to PDF,Free Online Convert Microsoft Visio VSD, VSDX, VSX, VTX, VDX, VSSX, VSTX, VSDM, VSSM &amp; VSTM files to PDF, HTML, JPG, PNG, SVG, BMP, TIFF, XPS, GIF, EMF, VSDX and more.</res>
+  <res name="diagramConversionTitle">Free Microsoft Visio Diagram Converter.</res>
+  <res name="diagramConversionSubTitle">Convert Microsoft Visio Diagrams to PDF, Images and HTML</res>
   <!-- Conversion App - How To-->
   <res name="HowtoConversionTitle">How to convert {0} file using {1}</res>
   <res name="HowtoConversionFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
