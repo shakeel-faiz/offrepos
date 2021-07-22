@@ -1,8 +1,8 @@
-﻿using Aspose.Imaging.Cloud.Live.Demos.Models;
+﻿using Aspose.Diagram.Cloud.Live.Demos.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
+namespace Aspose.Diagram.Cloud.Live.Demos.Controllers
 {
     public class HomeController : BaseController
     {

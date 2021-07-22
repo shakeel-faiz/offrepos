@@ -1,5 +1,5 @@
-﻿using Aspose.Imaging.Cloud.Live.Demos.Models;
-using Aspose.Imaging.Cloud.Live.Demos.Services;
+﻿using Aspose.Diagram.Cloud.Live.Demos.Models;
+using Aspose.Diagram.Cloud.Live.Demos.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
@@ -8,7 +8,7 @@ using System.IO;
 using System.Threading.Tasks;
 
 
-namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
+namespace Aspose.Diagram.Cloud.Live.Demos.Controllers
 {
     public class ConversionController : BaseController
     {

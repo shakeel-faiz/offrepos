@@ -3,7 +3,7 @@ using Aspose.Diagram.Cloud.SDK.Model;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace Aspose.Imaging.Cloud.Live.Demos.Services
+namespace Aspose.Diagram.Cloud.Live.Demos.Services
 {
     public interface IAsposeDiagramCloudApiService
     {
