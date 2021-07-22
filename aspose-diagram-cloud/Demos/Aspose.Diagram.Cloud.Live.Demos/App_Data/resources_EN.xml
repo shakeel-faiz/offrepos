@@ -17,7 +17,7 @@
   <res name="btnBackHome">Back to Home</res>
   <res name="FileSelectMessage">Please select a file to convert</res>
   <res name="SaveAs">Save as</res>
-  <res name="diagramConversionSaveAsOptions">PDF,PNG,BMP,VSSX,VSTM,SVG,HTML,XPS</res>
+  <res name="diagramConversionSaveAsOptions">VDX,VSX,VTX,TIFF,PNG,BMP,EMF,JPEG,PDF,XPS,GIF,HTML,SVG,SWF,XAML,VSDX,VSTX,VSSX,VSDM,VSSM,VSTM</res>
   <res name="DropOrUploadFile">Drop or upload your file</res>
   <res name="DropOrUploadFiles">Drop or upload your files</res>
   <res name="diagramValidationExpression">.VSD|.VSDX|.VSX|.VTX|.VDX|.VSSX|.VSTX|.VSDM|.VSSM|.VSTM</res>
