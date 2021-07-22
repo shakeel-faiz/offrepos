@@ -12,14 +12,14 @@ namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
 {
     public class ConversionController : BaseController
     {
-        public ConversionController(IMemoryCache cache, IAsposeImagingCloudApiService imagingService) : base(cache)
+        public ConversionController(IMemoryCache cache, IAsposeDiagramCloudApiService diagramService) : base(cache)
         {
-            ImagingService = imagingService;
+            DiagramService = diagramService;
         }
 
         public override string Product => (string)RouteData.Values["product"];
 
-        public IAsposeImagingCloudApiService ImagingService { get; }
+        public IAsposeDiagramCloudApiService DiagramService { get; }
 
         public IActionResult Conversion()
         {
@@ -46,12 +46,10 @@ namespace Aspose.Imaging.Cloud.Live.Demos.Controllers
                 await postedFile.CopyToAsync(ms);
                 ms.Position = 0;
 
-                string fromFormat = Path.GetExtension(fileName).Substring(1);
-                string toFormat = outputType;
                 var file = ms;
                 outputFileName = Path.GetFileNameWithoutExtension(fileName) + "." + outputType;
 
-                using (MemoryStream convertResult = ImagingService.Convert(file, fileName, toFormat) as MemoryStream)
+                using (MemoryStream convertResult = DiagramService.Convert(file, fileName, outputFileName) as MemoryStream)
                 {
                     fileData = Convert.ToHexString(convertResult.ToArray());
                 }
